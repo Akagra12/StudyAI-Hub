@@ -1,0 +1,50 @@
+{
+  "zone": "studyaihub.tech",
+  "dns_records": [
+    {
+      "type": "A",
+      "name": "studyaihub.tech",
+      "content": "YOUR_VPS_IP",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "Root Apex Domain pointed through Cloudflare CDN Proxy"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "content": "studyaihub.tech",
+      "ttl": 1,
+      "proxied": true,
+      "comment": "WWW Canonical Alias"
+    }
+  ],
+  "ssl_settings": {
+    "ssl_mode": "strict",
+    "always_use_https": true,
+    "min_tls_version": "1.2",
+    "opportunistic_encryption": true,
+    "automatic_https_rewrites": true
+  },
+  "speed_settings": {
+    "brotli": true,
+    "minify": {
+      "css": true,
+      "js": true,
+      "html": true
+    },
+    "rocket_loader": false,
+    "early_hints": true
+  },
+  "caching_rules": [
+    {
+      "pattern": "studyaihub.tech/css/*",
+      "cache_level": "cache_everything",
+      "edge_cache_ttl": 2592000
+    },
+    {
+      "pattern": "studyaihub.tech/js/*",
+      "cache_level": "cache_everything",
+      "edge_cache_ttl": 2592000
+    }
+  ]
+}

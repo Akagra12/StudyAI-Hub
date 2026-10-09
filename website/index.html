@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyAI Hub – AI Tools &amp; Resources for B.Tech CSE Students</title>
+  <meta name="description" content="Discover curated, benchmarked AI tools tailored specifically for B.Tech Computer Science Engineering students across coding, DSA, machine learning, semester projects, and campus placement prep.">
+  <link rel="canonical" href="https://studyaihub.tech/">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studyaihub.tech/">
+  <meta property="og:title" content="StudyAI Hub – AI Tools &amp; Resources for B.Tech CSE Students">
+  <meta property="og:description" content="Discover curated, benchmarked AI tools tailored specifically for B.Tech Computer Science Engineering students across coding, DSA, machine learning, semester projects, and campus placement prep.">
+  <meta property="og:site_name" content="StudyAI Hub">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StudyAI Hub – AI Tools &amp; Resources for B.Tech CSE Students">
+  <meta name="twitter:description" content="Discover curated AI tools specifically for B.Tech Computer Science Engineering students.">
+
+  <!-- Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://studyaihub.tech/#website",
+        "url": "https://studyaihub.tech/",
+        "name": "StudyAI Hub",
+        "description": "AI Tools & Resources for B.Tech Computer Science Engineering Students",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://studyaihub.tech/ai-tool-reviews/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://studyaihub.tech/#organization",
+        "name": "StudyAI Hub",
+        "url": "https://studyaihub.tech/",
+        "logo": "https://studyaihub.tech/images/logo.png",
+        "sameAs": [
+          "https://github.com/studyaihub"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" id="brandLogo">
+        <span class="logo-icon">AI</span>
+        <span>StudyAI Hub</span>
+        <span class="brand-tagline-badge">B.Tech CSE</span>
+      </a>
+
+      <div class="header-controls">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/ai-coding-tools/">Coding</a></li>
+          <li><a href="/ai-dsa-tools/">DSA</a></li>
+          <li><a href="/ai-ml-tools/">AI/ML</a></li>
+          <li><a href="/ai-study-tools/">Study &amp; Exams</a></li>
+          <li><a href="/ai-project-research-tools/">Projects</a></li>
+          <li><a href="/ai-placement-tools/">Placements</a></li>
+          <li><a href="/blog/">Articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/ai-tool-reviews/" class="nav-cta">Browse All Tools</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-badge">Exclusively for Computer Science Engineering</div>
+        <h1 class="hero-title">AI Tools &amp; Resources for B.Tech CSE Students</h1>
+        <p class="hero-subtitle">Discover useful AI tools for coding, DSA, AI/ML, projects, academics and placement preparation.</p>
+        <div class="hero-actions">
+          <a href="#featured-tools" class="btn btn-primary" id="heroExploreBtn">Explore AI Tools</a>
+          <a href="/blog/best-ai-tools-for-btech-cse-students/" class="btn btn-secondary">Read CSE Guide</a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>B.Tech CSE Focused</p>
+          </div>
+          <div class="stat-item">
+            <h3>8+</h3>
+            <p>Benchmarked AI Tools</p>
+          </div>
+          <div class="stat-item">
+            <h3>6</h3>
+            <p>CSE Category Hubs</p>
+          </div>
+          <div class="stat-item">
+            <h3>0%</h3>
+            <p>Irrelevant Bloat</p>
+          </div>
+        </div>
+
+        <!-- Interactive AI Tool Finder Box -->
+        <div class="tool-finder-box" id="aiToolFinder">
+          <div class="tool-finder-header">
+            <h3>Interactive AI Tool Finder</h3>
+            <p>Select your semester task and pricing preference to instantly match with the right developer tool.</p>
+          </div>
+          <div class="finder-grid">
+            <div class="finder-field">
+              <label for="finderCategory">Category</label>
+              <select id="finderCategory" class="finder-select">
+                <option value="all">All Categories</option>
+                <option value="coding">AI Coding &amp; IDEs</option>
+                <option value="dsa">DSA &amp; Algorithms</option>
+                <option value="ml">Machine Learning &amp; Cloud GPUs</option>
+                <option value="study">Study &amp; Semester Exams</option>
+                <option value="placement">Internships &amp; Placements</option>
+              </select>
+            </div>
+
+            <div class="finder-field">
+              <label for="finderTask">Student Task</label>
+              <select id="finderTask" class="finder-select">
+                <option value="all">Any Task</option>
+                <option value="autocomplete">IDE Code Autocomplete</option>
+                <option value="multi-file">Multi-file Project Refactoring</option>
+                <option value="dynamic-programming">DP &amp; Recursion Tracing</option>
+                <option value="debugging">Test Case / Error Debugging</option>
+                <option value="cloud-gpu">Cloud GPU Model Training</option>
+                <option value="notes">Semester Notes &amp; Exam Summaries</option>
+                <option value="mock-interview">Spoken Placement Mock Interview</option>
+              </select>
+            </div>
+
+            <div class="finder-field">
+              <label for="finderPricing">Pricing / Student Perk</label>
+              <select id="finderPricing" class="finder-select">
+                <option value="all">All Pricing Models</option>
+                <option value="free">100% Free / Free Student Pack</option>
+                <option value="freemium">Freemium Tier Available</option>
+              </select>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <button id="finderResetBtn" class="btn btn-secondary btn-sm">Reset Filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. What is StudyAI Hub? -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Our Initiative</span>
+          <h2 class="section-title">What is StudyAI Hub?</h2>
+          <p class="section-desc">StudyAI Hub is a focused, searchable, and SEO-optimized directory built exclusively for B.Tech Computer Science Engineering students. Unlike generic AI aggregators that overwhelm users with marketing and non-technical apps, we structure tools around actual computer science engineering workflows: code synthesis, algorithmic analysis, machine learning modeling, lab assignments, capstone projects, and technical interview preparation.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon" style="margin-bottom: 0.75rem; font-size: 1.5rem;">⚡</div>
+            <h3 class="card-title">Curated for CSE Syllabus</h3>
+            <p class="card-text">Every tool is mapped to actual academic and placement requirements: Operating Systems, DBMS, Algorithms, Neural Networks, and Web Systems.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="margin-bottom: 0.75rem; font-size: 1.5rem;">🎯</div>
+            <h3 class="card-title">Zero Generic Distractions</h3>
+            <p class="card-text">Strictly no marketing, business, or non-engineering tools. Only software that helps computer science engineers write better code and master core CS concepts.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="margin-bottom: 0.75rem; font-size: 1.5rem;">🔍</div>
+            <h3 class="card-title">Real Student Use Cases</h3>
+            <p class="card-text">Detailed breakdowns on pricing (free student tiers, GitHub Student Developer Pack eligibility), pros, limitations, and prompt workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. AI Coding Tools -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Category 01</span>
+          <h2 class="section-title">AI Coding Tools</h2>
+          <p class="section-desc">Accelerate development, debug syntax errors, and generate boilerplate code inside modern IDEs like VS Code.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI Coding</span>
+                <span class="badge badge-free">Free for Students</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/github-copilot/">GitHub Copilot</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Real-time inline tab autocomplete and unit tests</div>
+            <p class="card-text">Autocompletes code lines, functions, docstrings, and unit tests directly in VS Code, JetBrains, and Neovim.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Free access via GitHub Student Pack; excellent for boilerplate C++, Java, and Python lab assignments.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="copilot"> Compare
+              </label>
+              <a href="/ai-tool-reviews/github-copilot/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI Coding</span>
+                <span class="badge badge-freemium">Freemium</span>
+              </div>
+              <span class="badge badge-difficulty-intermediate">Difficulty: Intermediate</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/cursor-ai/">Cursor AI</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Multi-file refactoring &amp; repository-wide chat</div>
+            <p class="card-text">An AI-first fork of VS Code with codebase-wide semantic indexing, multi-file edits, and instant terminal command debugging.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Full-stack MERN/Django capstone projects and understanding large legacy repositories.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="cursor"> Compare
+              </label>
+              <a href="/ai-tool-reviews/cursor-ai/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1.5rem; text-align: right;">
+          <a href="/ai-coding-tools/" class="category-link">Explore all AI Coding Tools &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. AI DSA Tools -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Category 02</span>
+          <h2 class="section-title">AI DSA Tools</h2>
+          <p class="section-desc">Master Data Structures and Algorithms with step-by-step logic explanations, time/space complexity analysis, and edge-case debugging.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI DSA</span>
+                <span class="badge badge-free">Free Tier</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: All Levels</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/chatgpt-for-dsa/">ChatGPT for DSA &amp; Algorithms</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Algorithm intuition, recursion trees &amp; Socratic hints</div>
+            <p class="card-text">Interactive conversational assistant for breaking down DP state transitions, recursion trees, and dry-running graph traversals.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Asking for intuition and Socratic hints rather than copying raw code during LeetCode practice.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="chatgpt-dsa"> Compare
+              </label>
+              <a href="/ai-tool-reviews/chatgpt-for-dsa/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI DSA</span>
+                <span class="badge badge-freemium">Integrated</span>
+              </div>
+              <span class="badge badge-difficulty-intermediate">Difficulty: Intermediate</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/leetcode-ai-debugger/">LeetCode AI Debugger</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Failing test case diagnostics &amp; TLE bottlenecks</div>
+            <p class="card-text">Embedded AI assistant in LeetCode that analyzes failed test cases, explains TLE (Time Limit Exceeded) errors, and hints at optimal constraints.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Debugging segmentation faults and boundary conditions in C++ and Java competitive programming.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="leetcode-ai"> Compare
+              </label>
+              <a href="/ai-tool-reviews/leetcode-ai-debugger/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1.5rem; text-align: right;">
+          <a href="/ai-dsa-tools/" class="category-link">Explore all AI DSA Tools &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. AI/ML Tools -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Category 03</span>
+          <h2 class="section-title">AI &amp; Machine Learning Tools</h2>
+          <p class="section-desc">Train models, fine-tune transformers, manage datasets, and experiment on cloud GPUs without costly local hardware.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI/ML</span>
+                <span class="badge badge-free">Free Cloud T4 GPU</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/google-colab-ai/">Google Colab AI</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Cloud GPU acceleration &amp; zero-setup notebooks</div>
+            <p class="card-text">Jupyter notebook environment in the cloud with AI code generation for PyTorch, TensorFlow, Pandas, and Matplotlib.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Deep Learning semester labs and training Computer Vision / NLP models without an expensive local GPU.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="colab"> Compare
+              </label>
+              <a href="/ai-tool-reviews/google-colab-ai/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI/ML</span>
+                <span class="badge badge-free">Open Source</span>
+              </div>
+              <span class="badge badge-difficulty-intermediate">Difficulty: Intermediate</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/hugging-face-hub/">Hugging Face Hub</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Pre-trained models, datasets &amp; free web spaces</div>
+            <p class="card-text">The central platform for open-source AI models, tokenizers, datasets, and Gradio/Streamlit Spaces.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Downloading pre-trained BERT/Llama models and hosting live demo web apps for final year capstone projects.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="huggingface"> Compare
+              </label>
+              <a href="/ai-tool-reviews/hugging-face-hub/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1.5rem; text-align: right;">
+          <a href="/ai-ml-tools/" class="category-link">Explore all AI/ML Tools &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Study & Exam Tools -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Category 04</span>
+          <h2 class="section-title">College Study &amp; Exam Tools</h2>
+          <p class="section-desc">Summarize heavy computer science textbooks, generate flashcards for GATE/semester exams, and organize technical documentation.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Study &amp; Exams</span>
+                <span class="badge badge-free">Free Student Plan</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/notion-ai-for-cse/">Notion AI for CSE Notes</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Markdown engineering notes &amp; syllabus wikis</div>
+            <p class="card-text">All-in-one workspace with AI synthesis for organizing semester notes, syllabus tracking, code snippet wikis, and cheat-sheet generation.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Structuring Computer Networks, DBMS, and OS notes with automatic summary tables and Q&amp;A.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="notion-ai"> Compare
+              </label>
+              <a href="/ai-tool-reviews/notion-ai-for-cse/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Study &amp; Exams</span>
+                <span class="badge badge-free">Free Search</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-study-tools/">Perplexity AI for CS Research</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Cited technical explanations &amp; RFC proofs</div>
+            <p class="card-text">Conversational search engine with direct academic citations, RFC documentation lookups, and technical specification summaries.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Quickly verifying protocols (TCP/IP, HTTP/3), API standards, and CS theory proofs with verified sources.</div>
+            <div class="card-footer-actions">
+              <span style="color: var(--text-muted);">Citation Search</span>
+              <a href="/ai-study-tools/" class="category-link">Explore Category &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Project & Research Tools -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Category 05</span>
+          <h2 class="section-title">CSE Projects &amp; Research Tools</h2>
+          <p class="section-desc">Architect capstone projects, scaffold database schemas, write IEEE-compliant research papers, and generate UML diagrams.</p>
+        </div>
+        <div class="grid-3">
+          <div class="category-card">
+            <h3>Architecture &amp; Schema Design</h3>
+            <p>Use Claude 3.5 Sonnet and Cursor to generate ER diagrams, REST API endpoints, and clean microservices architectures for major projects.</p>
+            <a href="/ai-project-research-tools/" class="category-link">Read Project Guide &rarr;</a>
+          </div>
+          <div class="category-card">
+            <h3>Literature Review &amp; IEEE Papers</h3>
+            <p>Tools like Semantic Scholar AI and Elicit help CSE undergrads find state-of-the-art papers, extract methodologies, and write project reports.</p>
+            <a href="/ai-project-research-tools/" class="category-link">Read Research Guide &rarr;</a>
+          </div>
+          <div class="category-card">
+            <h3>Full-Stack Scaffolding</h3>
+            <p>Generate React, Next.js, and FastAPI scaffolding with integrated authentication and database migrations in minutes.</p>
+            <a href="/blog/best-ai-tools-for-cse-projects/" class="category-link">View Capstone Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Placement Preparation Tools -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Category 06</span>
+          <h2 class="section-title">Internship &amp; Placement Preparation</h2>
+          <p class="section-desc">Simulate HR &amp; Technical interviews, refine your software engineering resume for ATS, and practice behavioral STAR responses.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Placements</span>
+                <span class="badge badge-free">100% Free by Google</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/interview-warmup-by-google/">Google Interview Warmup</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Spoken mock interviews &amp; keyword density feedback</div>
+            <p class="card-text">Interactive voice/text mock interview tool built by Google specifically for software engineering and data analytics roles.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Practicing situational and technical interview questions with instant AI feedback on vocabulary and depth.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="interview-warmup"> Compare
+              </label>
+              <a href="/ai-tool-reviews/interview-warmup-by-google/" class="category-link">View Details &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Placements</span>
+                <span class="badge badge-freemium">Freemium</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Difficulty: Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-placement-tools/">Resume Worded for SWE Resumes</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> ATS resume scoring &amp; quantifiable impact metrics</div>
+            <p class="card-text">AI resume feedback platform that benchmarks your CS resume against top tech company standards and ATS parsing rules.</p>
+            <div class="card-cse-usecase"><strong>CSE Use Case:</strong> Optimizing B.Tech project bullet points with quantifiable impact metrics for on-campus placements.</div>
+            <div class="card-footer-actions">
+              <span style="color: var(--text-muted);">Resume Checker</span>
+              <a href="/ai-placement-tools/" class="category-link">Explore Category &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Featured AI Tools (Interactive Directory Section) -->
+    <section class="section" id="featured-tools">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Search &amp; Filter</span>
+          <h2 class="section-title">Featured AI Tools for CSE</h2>
+          <p class="section-desc">Filter tools by engineering category, task, or search for specific terms like "C++ debugging", "cloud GPU", or "mock interview".</p>
+        </div>
+
+        <div class="tools-filter-bar">
+          <div class="search-input-wrapper">
+            <svg class="search-icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input type="text" id="toolSearchInput" class="search-input" placeholder="Search AI tools (e.g. Copilot, DSA, PyTorch, Colab)..." aria-label="Search AI tools">
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All (8)</button>
+            <button class="filter-btn" data-filter="coding">Coding</button>
+            <button class="filter-btn" data-filter="dsa">DSA</button>
+            <button class="filter-btn" data-filter="ml">AI/ML</button>
+            <button class="filter-btn" data-filter="study">Study</button>
+            <button class="filter-btn" data-filter="placement">Placements</button>
+          </div>
+        </div>
+
+        <div class="grid-3" id="toolsGrid">
+          <!-- Tool 1: GitHub Copilot -->
+          <div class="card tool-item-card" data-category="coding" data-pricing="free" data-task="autocomplete boilerplate" data-tags="github copilot vs code autocomplete python java c++ student developer pack">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Coding</span>
+                <span class="badge badge-free">Free (Student)</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/github-copilot/">GitHub Copilot</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Inline tab completion &amp; unit tests</div>
+            <p class="card-text">AI pair programmer integrated into IDEs for code completions, function generation, and test writing.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Writing boilerplate code and lab assignments quickly in VS Code.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="copilot"> Compare
+              </label>
+              <a href="/ai-tool-reviews/github-copilot/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 2: Cursor AI -->
+          <div class="card tool-item-card" data-category="coding" data-pricing="freemium" data-task="multi-file debugging" data-tags="cursor ai code editor multi-file terminal debugging react nodejs django">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Coding</span>
+                <span class="badge badge-freemium">Freemium</span>
+              </div>
+              <span class="badge badge-difficulty-intermediate">Intermediate</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/cursor-ai/">Cursor AI</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Multi-file refactoring &amp; repository chat</div>
+            <p class="card-text">AI-first code editor designed for multi-file refactoring, repository chat, and bug fixing.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Semester capstone projects and navigating complex codebases.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="cursor"> Compare
+              </label>
+              <a href="/ai-tool-reviews/cursor-ai/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 3: ChatGPT for DSA -->
+          <div class="card tool-item-card" data-category="dsa" data-pricing="free" data-task="dynamic-programming autocomplete" data-tags="chatgpt algorithms data structures dynamic programming time complexity dry run">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">DSA</span>
+                <span class="badge badge-free">Free Tier</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">All Levels</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/chatgpt-for-dsa/">ChatGPT for DSA</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Socratic hints &amp; DP state transitions</div>
+            <p class="card-text">Conversational problem solver for analyzing recurrence relations, trees, graphs, and Big-O efficiency.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Socratic hints and step-by-step logic breakdowns.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="chatgpt-dsa"> Compare
+              </label>
+              <a href="/ai-tool-reviews/chatgpt-for-dsa/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 4: LeetCode AI Debugger -->
+          <div class="card tool-item-card" data-category="dsa" data-pricing="freemium" data-task="debugging" data-tags="leetcode ai debugger test cases tle edge cases competitive programming c++">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">DSA</span>
+                <span class="badge badge-freemium">Integrated</span>
+              </div>
+              <span class="badge badge-difficulty-intermediate">Intermediate</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/leetcode-ai-debugger/">LeetCode AI Debugger</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Failing test case analysis &amp; TLE errors</div>
+            <p class="card-text">Integrated diagnostic tool that highlights failing test cases and memory bottlenecks in algorithm solutions.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Resolving boundary errors in competitive coding.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="leetcode-ai"> Compare
+              </label>
+              <a href="/ai-tool-reviews/leetcode-ai-debugger/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 5: Google Colab AI -->
+          <div class="card tool-item-card" data-category="ml" data-pricing="free" data-task="cloud-gpu" data-tags="google colab ai python pytorch jupyter cloud t4 gpu deep learning">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI/ML</span>
+                <span class="badge badge-free">Free Cloud GPU</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/google-colab-ai/">Google Colab AI</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Cloud GPU acceleration &amp; ML notebooks</div>
+            <p class="card-text">Cloud Jupyter notebook with built-in AI code completion, auto-formatting, and GPU acceleration.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Machine learning assignments and training neural networks.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="colab"> Compare
+              </label>
+              <a href="/ai-tool-reviews/google-colab-ai/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 6: Hugging Face Hub -->
+          <div class="card tool-item-card" data-category="ml" data-pricing="free" data-task="cloud-gpu multi-file" data-tags="hugging face models transformers datasets streamlit spaces open source">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">AI/ML</span>
+                <span class="badge badge-free">Open Source</span>
+              </div>
+              <span class="badge badge-difficulty-intermediate">Intermediate</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/hugging-face-hub/">Hugging Face Hub</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Pre-trained models, datasets &amp; web demos</div>
+            <p class="card-text">Open platform for downloading transformer models, datasets, and hosting interactive web demonstrations.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Pre-trained NLP/CV models for major B.Tech projects.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="huggingface"> Compare
+              </label>
+              <a href="/ai-tool-reviews/hugging-face-hub/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 7: Notion AI for CSE -->
+          <div class="card tool-item-card" data-category="study" data-pricing="free" data-task="notes" data-tags="notion ai notes dbms os cn syllabus summaries flashcards exam prep">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Study</span>
+                <span class="badge badge-free">Free Student Plan</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/notion-ai-for-cse/">Notion AI for CSE</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Markdown notes &amp; semester wikis</div>
+            <p class="card-text">Markdown workspace with automated note summarization, technical wiki structuring, and study guides.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> Core CS subject revision (OS, DBMS, Computer Networks).</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="notion-ai"> Compare
+              </label>
+              <a href="/ai-tool-reviews/notion-ai-for-cse/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 8: Google Interview Warmup -->
+          <div class="card tool-item-card" data-category="placement" data-pricing="free" data-task="mock-interview" data-tags="google interview warmup placements behavioral swe mock interview tech questions">
+            <div class="card-top">
+              <div class="badge-group">
+                <span class="badge badge-category">Placements</span>
+                <span class="badge badge-free">100% Free</span>
+              </div>
+              <span class="badge badge-difficulty-beginner">Beginner</span>
+            </div>
+            <h3 class="card-title"><a href="/ai-tool-reviews/interview-warmup-by-google/">Google Interview Warmup</a></h3>
+            <div class="card-best-for"><strong>Best For:</strong> Spoken mock interviews &amp; keyword density</div>
+            <p class="card-text">Speech-to-text mock interview platform analyzing responses for technical keywords and clarity.</p>
+            <div class="card-cse-usecase"><strong>Best For:</strong> On-campus placement rounds and behavioral STAR prep.</div>
+            <div class="card-footer-actions">
+              <label class="compare-checkbox-label">
+                <input type="checkbox" class="compare-tool-checkbox" data-tool-id="interview-warmup"> Compare
+              </label>
+              <a href="/ai-tool-reviews/interview-warmup-by-google/" class="category-link">Read Review &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="noResultsMessage" style="display:none; text-align:center; padding: 2rem; color: var(--text-secondary);">
+          No AI tools matched your search query. Try searching for "C++", "PyTorch", or "VS Code".
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Latest CSE Articles -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">In-Depth Guides</span>
+          <h2 class="section-title">Latest CSE Articles &amp; Strategies</h2>
+          <p class="section-desc">Comprehensive editorial guides designed to help B.Tech CSE students master modern AI workflows without violating academic integrity.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="badge badge-category" style="margin-bottom: 0.75rem;">Comprehensive Guide</span>
+            <h3 class="card-title"><a href="/blog/best-ai-tools-for-btech-cse-students/">Best AI Tools for B.Tech CSE Students (2026 Edition)</a></h3>
+            <p class="card-text">The definitive ranking of AI tools across coding, algorithms, deep learning, semester coursework, and placement rounds.</p>
+            <div class="card-footer-actions">
+              <span>12 min read</span>
+              <a href="/blog/best-ai-tools-for-btech-cse-students/" class="category-link">Read Article &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-category" style="margin-bottom: 0.75rem;">Coding Guide</span>
+            <h3 class="card-title"><a href="/blog/best-ai-coding-tools-for-cse-students/">Best AI Coding Tools for CSE Students</a></h3>
+            <p class="card-text">Comparing GitHub Copilot, Cursor AI, and DeepSeek Coder for student developers, lab assignments, and full-stack projects.</p>
+            <div class="card-footer-actions">
+              <span>9 min read</span>
+              <a href="/blog/best-ai-coding-tools-for-cse-students/" class="category-link">Read Article &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-category" style="margin-bottom: 0.75rem;">DSA Mastery</span>
+            <h3 class="card-title"><a href="/blog/best-ai-tools-for-dsa-preparation/">Best AI Tools for DSA Preparation</a></h3>
+            <p class="card-text">How to ethically use AI assistants to develop algorithmic intuition, dry-run code, and conquer complex dynamic programming problems.</p>
+            <div class="card-footer-actions">
+              <span>10 min read</span>
+              <a href="/blog/best-ai-tools-for-dsa-preparation/" class="category-link">Read Article &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-category" style="margin-bottom: 0.75rem;">AI/ML Practical</span>
+            <h3 class="card-title"><a href="/blog/best-ai-tools-for-machine-learning-students/">Best AI Tools for Machine Learning Students</a></h3>
+            <p class="card-text">From free GPU environments to model hubs: essential AI tools for computer vision, NLP, and PyTorch coursework.</p>
+            <div class="card-footer-actions">
+              <span>8 min read</span>
+              <a href="/blog/best-ai-tools-for-machine-learning-students/" class="category-link">Read Article &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-category" style="margin-bottom: 0.75rem;">Capstone Projects</span>
+            <h3 class="card-title"><a href="/blog/best-ai-tools-for-cse-projects/">Best AI Tools for CSE Projects</a></h3>
+            <p class="card-text">Step-by-step roadmap for utilizing AI in major &amp; minor B.Tech engineering projects from architecture to final IEEE paper writing.</p>
+            <div class="card-footer-actions">
+              <span>11 min read</span>
+              <a href="/blog/best-ai-tools-for-cse-projects/" class="category-link">Read Article &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-category" style="margin-bottom: 0.75rem;">Free &amp; Open</span>
+            <h3 class="card-title"><a href="/blog/best-free-ai-tools-for-computer-science-students/">Best Free AI Tools for Computer Science Students</a></h3>
+            <p class="card-text">A zero-cost toolkit featuring GitHub Student Developer Pack perks, free cloud tiers, and open-source local LLMs.</p>
+            <div class="card-footer-actions">
+              <span>8 min read</span>
+              <a href="/blog/best-free-ai-tools-for-computer-science-students/" class="category-link">Read Article &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Why StudyAI Hub? -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Comparison &amp; Integrity</span>
+          <h2 class="section-title">Why StudyAI Hub?</h2>
+          <p class="section-desc">We solve the information fragmentation problem faced by computer science engineering students.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card" style="background: var(--bg-primary);">
+            <h3 class="card-title" style="color: var(--accent-cyan);">1. 100% CSE Specific</h3>
+            <p class="card-text">General tech blogs review AI for marketing copy, graphic design, and sales pitches. StudyAI Hub filters 100% of non-CSE noise to focus strictly on algorithms, codebases, compilers, and campus recruitment.</p>
+          </div>
+          <div class="card" style="background: var(--bg-primary);">
+            <h3 class="card-title" style="color: var(--accent-emerald);">2. Student Budget Aware</h3>
+            <p class="card-text">Every tool review highlights student discounts, GitHub Student Developer Pack perks, free API tiers, and open-source alternatives so you never pay out of pocket unnecessarily.</p>
+          </div>
+          <div class="card" style="background: var(--bg-primary);">
+            <h3 class="card-title" style="color: var(--primary);">3. Academic &amp; Ethical Focus</h3>
+            <p class="card-text">We emphasize learning concepts and debugging rather than blind copy-pasting, ensuring you build genuine software engineering problem-solving skills for technical interviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Compare Bar -->
+  <div class="sticky-compare-bar" id="stickyCompareBar">
+    <span style="font-size: 0.9rem; font-weight: 600;">
+      <span class="compare-badge-count" id="compareCountBadge">0</span> Tools Selected
+    </span>
+    <button class="btn btn-primary btn-sm" id="openCompareModalBtn">Compare Now</button>
+    <button class="btn btn-secondary btn-sm" id="clearCompareBtn" style="padding: 0.4rem 0.6rem;">Clear</button>
+  </div>
+
+  <!-- Compare Modal -->
+  <div class="modal-overlay" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="compareModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="compareModalTitle" style="font-size: 1.3rem; margin: 0;">Side-by-Side Tool Comparison</h3>
+        <button class="modal-close-btn" id="closeCompareModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div id="compareTableContainer" style="overflow-x: auto;">
+        <!-- Dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="logo-icon">AI</span>
+            <span>StudyAI Hub</span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+            StudyAI Hub is the dedicated SEO resource and knowledge base designed exclusively for B.Tech Computer Science Engineering students. Curated AI tools for coding, DSA, AI/ML, semester projects, and tech placements.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="/ai-coding-tools/">AI Coding Tools</a></li>
+            <li><a href="/ai-dsa-tools/">AI DSA Tools</a></li>
+            <li><a href="/ai-ml-tools/">AI/ML Tools</a></li>
+            <li><a href="/ai-study-tools/">Study &amp; Exams</a></li>
+            <li><a href="/ai-project-research-tools/">Project &amp; Research</a></li>
+            <li><a href="/ai-placement-tools/">Placement Prep</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Key Articles</h4>
+          <ul class="footer-links">
+            <li><a href="/blog/best-ai-tools-for-btech-cse-students/">Best AI Tools for CSE</a></li>
+            <li><a href="/blog/best-ai-coding-tools-for-cse-students/">Top AI Coding Tools</a></li>
+            <li><a href="/blog/best-ai-tools-for-dsa-preparation/">DSA AI Preparation</a></li>
+            <li><a href="/blog/best-ai-tools-for-cse-projects/">Capstone Project Guide</a></li>
+            <li><a href="/blog/best-free-ai-tools-for-computer-science-students/">Free AI Student Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links &amp; Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About StudyAI Hub</a></li>
+            <li><a href="/contact/">Contact &amp; Suggest Tool</a></li>
+            <li><a href="/sitemap.xml">XML Sitemap</a></li>
+            <li><a href="/robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudyAI Hub. Developed for B.Tech Computer Science Engineering Students. Built for CSET489 Mini-Project.</p>
+        <p>SEO Optimized &bull; Fast Performance &bull; Semantic Schema</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

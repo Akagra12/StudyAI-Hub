@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Tool Suggestions – StudyAI Hub for B.Tech CSE</title>
+  <meta name="description" content="Get in touch with the StudyAI Hub team, suggest an AI tool for B.Tech CSE students, report outdated information, or submit feedback.">
+  <link rel="canonical" href="https://studyaihub.tech/contact/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studyaihub.tech/contact/">
+  <meta property="og:title" content="Contact &amp; Tool Suggestions – StudyAI Hub for B.Tech CSE">
+  <meta property="og:description" content="Get in touch with the StudyAI Hub team, suggest an AI tool for B.Tech CSE students, or submit feedback.">
+  <meta property="og:site_name" content="StudyAI Hub">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact StudyAI Hub",
+    "description": "Contact & Tool Suggestion page for StudyAI Hub",
+    "url": "https://studyaihub.tech/contact/"
+  }
+  </script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo">
+        <span class="logo-icon">AI</span>
+        <span>StudyAI Hub</span>
+        <span class="brand-tagline-badge">B.Tech CSE</span>
+      </a>
+
+      <div class="header-controls">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/ai-coding-tools/">Coding</a></li>
+          <li><a href="/ai-dsa-tools/">DSA</a></li>
+          <li><a href="/ai-ml-tools/">AI/ML</a></li>
+          <li><a href="/ai-study-tools/">Study &amp; Exams</a></li>
+          <li><a href="/ai-project-research-tools/">Projects</a></li>
+          <li><a href="/ai-placement-tools/">Placements</a></li>
+          <li><a href="/blog/">Articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/ai-tool-reviews/" class="nav-cta">Browse All Tools</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
+    <div class="article-layout">
+      <div>
+        <h1 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem;">Contact &amp; Suggest a Tool</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Are you a B.Tech CSE student with a recommended AI tool, a developer building engineering developer tooling, or do you have feedback on our reviews? Send us a message below.</p>
+
+        <form id="contactForm" style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem;" onsubmit="event.preventDefault(); document.getElementById('formSuccess').style.display='block';">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="e.g. Rahul Sharma (B.Tech CSE 3rd Year)" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Student / Academic Email</label>
+            <input type="email" id="email" class="form-input" placeholder="e.g. rahul@university.edu" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="category">Subject / Tool Category</label>
+            <select id="category" class="form-select">
+              <option value="suggest-tool">Suggest a New AI Tool for CSE</option>
+              <option value="correction">Report Outdated Feature / Pricing</option>
+              <option value="seo-inquiry">Academic SEO Project Inquiry</option>
+              <option value="feedback">General Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message &amp; CSE Use Case</label>
+            <textarea id="message" class="form-textarea" rows="5" placeholder="Explain the tool, how it helps B.Tech CSE students, and pricing details..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+
+          <div id="formSuccess" style="display:none; margin-top: 1.25rem; padding: 1rem; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-md); color: var(--accent-emerald); font-size: 0.9rem; text-align: center;">
+            ✔ Thank you! Your submission has been received and will be reviewed by the StudyAI Hub team.
+          </div>
+        </form>
+      </div>
+
+      <aside>
+        <div class="sidebar-sticky">
+          <h3 class="toc-title">Evaluation Criteria</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+            Before suggesting a tool, please ensure it strictly satisfies our <strong>B.Tech CSE Student Policy</strong>:
+          </p>
+          <ul class="toc-list" style="color: var(--text-muted);">
+            <li>✔ Strictly relevant to Computer Science Engineering (Code, DSA, ML, Systems, Placements)</li>
+            <li>✔ Transparent student pricing or free tier availability</li>
+            <li>✖ No generic copywriting or marketing generators</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="logo-icon">AI</span>
+            <span>StudyAI Hub</span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.88rem;">StudyAI Hub – The dedicated SEO resource for B.Tech Computer Science Engineering students.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="/ai-coding-tools/">AI Coding Tools</a></li>
+            <li><a href="/ai-dsa-tools/">AI DSA Tools</a></li>
+            <li><a href="/ai-ml-tools/">AI/ML Tools</a></li>
+            <li><a href="/ai-placement-tools/">Placement Prep</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/sitemap.xml">XML Sitemap</a></li>
+            <li><a href="/robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudyAI Hub. Developed for B.Tech Computer Science Engineering Students.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

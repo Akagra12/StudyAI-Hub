@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow private assets or admin panels
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /xmlrpc.php
+
+# Sitemap reference
+Sitemap: https://studyaihub.tech/sitemap.xml

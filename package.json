@@ -1,0 +1,22 @@
+{
+  "name": "studyai-hub",
+  "version": "1.0.0",
+  "description": "StudyAI Hub – AI Tools & Resources for B.Tech CSE Students (CSET489 SEO Mini-Project)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "seo",
+    "btech-cse",
+    "ai-tools",
+    "computer-science",
+    "coding-tools",
+    "dsa"
+  ],
+  "author": "B.Tech CSE Student Team",
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- StudyAI Hub WordPress eXtended RSS (WXR) Export File -->
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+  <title>StudyAI Hub</title>
+  <link>https://studyaihub.tech</link>
+  <description>AI Tools &amp; Resources for B.Tech CSE Students</description>
+  <pubDate>Thu, 08 Oct 2026 10:00:00 +0000</pubDate>
+  <language>en-US</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://studyaihub.tech</wp:base_site_url>
+  <wp:base_blog_url>https://studyaihub.tech</wp:base_blog_url>
+
+  <!-- Categories -->
+  <wp:category>
+    <wp:term_id>1</wp:term_id>
+    <wp:category_nicename>ai-coding-tools</wp:category_nicename>
+    <wp:category_parent></wp:category_parent>
+    <wp:cat_name><![CDATA[AI Coding Tools]]></wp:cat_name>
+  </wp:category>
+  <wp:category>
+    <wp:term_id>2</wp:term_id>
+    <wp:category_nicename>ai-dsa-tools</wp:category_nicename>
+    <wp:category_parent></wp:category_parent>
+    <wp:cat_name><![CDATA[AI DSA Tools]]></wp:cat_name>
+  </wp:category>
+  <wp:category>
+    <wp:term_id>3</wp:term_id>
+    <wp:category_nicename>ai-ml-tools</wp:category_nicename>
+    <wp:category_parent></wp:category_parent>
+    <wp:cat_name><![CDATA[AI/ML Tools]]></wp:cat_name>
+  </wp:category>
+  <wp:category>
+    <wp:term_id>4</wp:term_id>
+    <wp:category_nicename>ai-study-tools</wp:category_nicename>
+    <wp:category_parent></wp:category_parent>
+    <wp:cat_name><![CDATA[AI Study Tools]]></wp:cat_name>
+  </wp:category>
+  <wp:category>
+    <wp:term_id>5</wp:term_id>
+    <wp:category_nicename>ai-project-research-tools</wp:category_nicename>
+    <wp:category_parent></wp:category_parent>
+    <wp:cat_name><![CDATA[AI Project &amp; Research Tools]]></wp:cat_name>
+  </wp:category>
+  <wp:category>
+    <wp:term_id>6</wp:term_id>
+    <wp:category_nicename>ai-placement-tools</wp:category_nicename>
+    <wp:category_parent></wp:category_parent>
+    <wp:cat_name><![CDATA[AI Placement Tools]]></wp:cat_name>
+  </wp:category>
+
+  <!-- Sample Tool Post Item: GitHub Copilot -->
+  <item>
+    <title>GitHub Copilot</title>
+    <link>https://studyaihub.tech/ai-tool-reviews/github-copilot/</link>
+    <pubDate>Thu, 08 Oct 2026 10:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://studyaihub.tech/?post_type=ai_tool&amp;p=101</guid>
+    <description></description>
+    <content:encoded><![CDATA[<h2>CSE Student Use Case</h2><p>GitHub Copilot automates boilerplate code across Java, C++, Python, and SQL for B.Tech CSE labs.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[The benchmark AI pair programmer for IDE autocompletion.]]></excerpt:encoded>
+    <wp:post_id>101</wp:post_id>
+    <wp:post_date>2026-10-08 10:00:00</wp:post_date>
+    <wp:post_name>github-copilot</wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_type>ai_tool</wp:post_type>
+  </item>
+
+  <!-- Sample Article Item -->
+  <item>
+    <title>Best AI Tools for B.Tech CSE Students (2026 Edition)</title>
+    <link>https://studyaihub.tech/blog/best-ai-tools-for-btech-cse-students/</link>
+    <pubDate>Thu, 08 Oct 2026 10:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://studyaihub.tech/?p=201</guid>
+    <content:encoded><![CDATA[<p>The definitive ranking and roadmap of AI tools tailored across the 4-year B.Tech CSE degree.</p>]]></content:encoded>
+    <wp:post_id>201</wp:post_id>
+    <wp:post_date>2026-10-08 10:00:00</wp:post_date>
+    <wp:post_name>best-ai-tools-for-btech-cse-students</wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_type>post</wp:post_type>
+  </item>
+</channel>
+</rss>
