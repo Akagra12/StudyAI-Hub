@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Site Pages -->
   <url>
-    <loc>https://studyaihub.tech/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/about/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/about/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/contact/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/contact/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -22,49 +22,49 @@
 
   <!-- Category Hub Pages -->
   <url>
-    <loc>https://studyaihub.tech/ai-coding-tools/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-coding-tools/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-dsa-tools/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-dsa-tools/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-ml-tools/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-ml-tools/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-study-tools/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-study-tools/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-project-research-tools/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-project-research-tools/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-placement-tools/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-placement-tools/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/blog/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -72,49 +72,49 @@
 
   <!-- In-depth AI Tool Reviews for B.Tech CSE -->
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/github-copilot/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/github-copilot/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/cursor-ai/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/cursor-ai/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/chatgpt-for-dsa/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/chatgpt-for-dsa/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/leetcode-ai-debugger/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/leetcode-ai-debugger/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/google-colab-ai/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/google-colab-ai/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/hugging-face-hub/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/hugging-face-hub/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/notion-ai-for-cse/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/notion-ai-for-cse/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/ai-tool-reviews/interview-warmup-by-google/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/ai-tool-reviews/interview-warmup-by-google/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -122,37 +122,37 @@
 
   <!-- SEO Blog Articles -->
   <url>
-    <loc>https://studyaihub.tech/blog/best-ai-tools-for-btech-cse-students/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/best-ai-tools-for-btech-cse-students/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/blog/best-ai-coding-tools-for-cse-students/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/best-ai-coding-tools-for-cse-students/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/blog/best-ai-tools-for-dsa-preparation/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/best-ai-tools-for-dsa-preparation/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/blog/best-ai-tools-for-machine-learning-students/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/best-ai-tools-for-machine-learning-students/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/blog/best-ai-tools-for-cse-projects/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/best-ai-tools-for-cse-projects/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://studyaihub.tech/blog/best-free-ai-tools-for-computer-science-students/</loc>
+    <loc>https://study-ai-hub-jade.vercel.app/blog/best-free-ai-tools-for-computer-science-students/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

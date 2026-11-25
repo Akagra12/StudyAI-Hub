@@ -7,4 +7,4 @@ Disallow: /wp-includes/
 Disallow: /xmlrpc.php
 
 # Sitemap reference
-Sitemap: https://studyaihub.tech/sitemap.xml
+Sitemap: https://study-ai-hub-jade.vercel.app/sitemap.xml
