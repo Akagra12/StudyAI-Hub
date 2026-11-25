@@ -343,8 +343,41 @@ document.addEventListener('DOMContentLoaded', () => {
     openCompareModalBtn.addEventListener('click', () => {
       renderComparisonModal();
       compareModal.classList.add('open');
+      if (typeof gtag === 'function') {
+        gtag('event', 'tool_comparison_click', { event_category: 'engagement' });
+      }
     });
   }
+
+  const findToolsBtn = document.getElementById('findToolsBtn');
+  if (findToolsBtn) {
+    findToolsBtn.addEventListener('click', () => {
+      runToolFinder();
+      if (typeof gtag === 'function') {
+        gtag('event', 'tool_comparison_click', { event_category: 'engagement' });
+      }
+    });
+  }
+
+  // Global listener to ensure any 'Compare Tools' or 'Find AI Tools' interaction fires the custom event
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest('button, a');
+    if (!el) return;
+    const txt = (el.textContent || '').trim().toLowerCase();
+    const id = el.id || '';
+    if (
+      id === 'openCompareModalBtn' ||
+      id === 'findToolsBtn' ||
+      id === 'heroFindToolsBtn' ||
+      txt === 'compare tools' ||
+      txt === 'find ai tools' ||
+      txt === 'compare now'
+    ) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'tool_comparison_click', { event_category: 'engagement' });
+      }
+    }
+  });
 
   if (closeCompareModalBtn && compareModal) {
     closeCompareModalBtn.addEventListener('click', () => {
